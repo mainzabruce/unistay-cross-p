@@ -2,40 +2,50 @@
 # Dependencies
 .dart_tool/
 .packages
-.pub/
-pubspec.lock
 
-# Build
+# Build outputs
 build/
-bin/
+*.apk
+*.aab
+*.app
+*.exe
+*.dll
+*.so
+*.dylib
 
-# IDE
-.idea/
-.vscode/
-*.iml
-*.ipr
-*.iws
-
-# OS
-.DS_Store
-Thumbs.db
+# Environment
+.env
+.env.local
+.env.*
+!.env.example
 
 # Logs
 *.log
 **/logs
 
-# Environment
-.env
-.env.local
-*.env.*
-
-# Coverage
-coverage/
-*.lcov
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Thumbs.db:encryptable
 
 # Temporary files
 *.tmp
 *.temp
-*.swp
 *~
+```
+
+Wait, let me reconsider. The only modified file is `pubspec.yaml` which suggests a Dart/Flutter project, but there are no actual build artifacts, dependency directories, or temporary files in the change list. The changes only show a configuration file modification.
+
+```
+# Dependencies
+.dart_tool/
+.packages
+
+# Build outputs
+build/
 ```
